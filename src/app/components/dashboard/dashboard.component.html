@@ -1,0 +1,32 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile style="border: 1px solid black ">
+    <canvas baseChart
+            [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            [colors]="doughnutColors"
+            [options]='doughnutchart1'></canvas>
+  </mat-grid-tile>
+  <mat-grid-tile style="border: 1px solid black">
+    <canvas baseChart
+            [data]="doughnutChartData2"
+            [labels]="doughnutChartLabels2"
+            [chartType]="doughnutChartType2"
+            [colors]="doughnutColors"
+            [options]='doughnutchart2'>
+    </canvas>
+  </mat-grid-tile>
+  <mat-grid-tile style="border: 1px solid black;" colspan="2">
+    <canvas baseChart
+            height="18vh" width="100%"
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            [colors]="barChartColors">
+    </canvas>
+  </mat-grid-tile>
+</mat-grid-list>
+

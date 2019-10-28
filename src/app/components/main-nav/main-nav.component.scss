@@ -1,0 +1,36 @@
+.head {
+  background-color: dimgrey;
+  font: 3vw bold SansSerif ;
+  font-weight: 500;
+  height: 4vw;
+}
+.head span{
+  color: #cc3300 ;
+  text-shadow: 2px 2px blue;
+}
+span:active{
+  color: white;
+background-color: #cc3300}
+.sidenav {
+  width: 250px;
+  background-color: dimgrey;
+  font: 2vw bold SansSerif;
+  color: white;
+  border: 1px solid blue;
+}
+.sidenav:after {
+  color: #cc3300;
+}
+li :hover, li:active
+{
+  background-color: #cc3300;
+}
+mat-icon
+{
+  color: white;
+  height: 50px;
+  width: 50px;
+}
+.routeActive {
+  background-color: red;
+}

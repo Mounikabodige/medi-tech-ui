@@ -1,0 +1,23 @@
+<div>
+  <mat-sidenav-container>
+    <mat-sidenav class="sidenav" #sidenav mode="push" [(opened)]="opened">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard"  routerLinkActive="routeActive">
+          <mat-icon>dashboard</mat-icon><span>Dashboard</span>
+      </a>
+        <a mat-list-item routerLink="/equipment"  routerLinkActive="routeActive">
+          <mat-icon>settings</mat-icon><span>Equipment</span>
+      </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="head">
+        <button mat-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+        <span style="width: 100%">ABC Inc.</span>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
